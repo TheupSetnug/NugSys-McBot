@@ -1,6 +1,2 @@
 [DEFAULT]
 DISCORD_TOKEN=
-
-[CHANNEL_WHITELIST]
-# Channel IDs to allow the bot to respond to commands in
-
