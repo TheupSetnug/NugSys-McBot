@@ -1,12 +1,19 @@
 [DEFAULT]
-DISCORD_TOKEN=
-DEBUG_CHANNEL_ID=
+# The Discord bot token
+DISCORD_TOKEN=example
+# A channel ID to log to (optional)
+DEBUG_CHANNEL_ID=12345
 
 [WHITELIST]
-GUILD_IDS=
-CHANNEL_IDS=
+# A list of guild IDs to allow the bot to be used in
+GUILD_IDS=[12345]
+# A list of channel IDs to allow the bot to be used in
+CHANNEL_IDS=[12345,23456,34567...]
 
 [JOURNALS]
+# A list of journal IDs (specific channel IDs in the guild) to watch posts from
 PARTS=PART1,PART2
+# list each part with the journal ID (the part name is case sensitive). 
+### Planning to add a way to get the journal ID from the channel name so this isnt needed, and to allow public vs private journals
 PART1=[journal channel id]
 PART2=
