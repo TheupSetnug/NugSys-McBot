@@ -1,8 +1,21 @@
-import configparser
-import sys
-import discord
-#from discord.ext import commands
-import shutil
+
+try:
+    import configparser
+    import sys
+    import discord
+    import shutil
+except ImportError:
+    print('Error importing required libraries, installing them now')
+    try:
+        import install
+        install.install_required_libraries()
+        import configparser
+        import sys
+        import discord
+        import shutil
+    except:
+        print('Error importing required libraries, please install them manually')
+        sys.exit(1)
 
 intents = discord.Intents.all()
 client  = discord.Client(intents=intents)
