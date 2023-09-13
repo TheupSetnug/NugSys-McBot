@@ -1,7 +1,8 @@
 # NugSys McBot
 Hi there! We are the Nugget System, a collection of identies that share a body. We are currently working on a Discord bot to help DID and OSDD systems better manage themselves and provide resources for themselves internally through a community platform that is easy to adopt for most people.
 
-This bot is currently in development and is not ready for use. If you would like to contribute, please contact me on Discord at "upsetnuggets".
+This bot is currently in development and is not ready for use. If you would like to contribute, please contact us on Discord at "upsetnuggets" or join my server.
+https://discord.gg/ECg4kbQ4Nc (This link is set to 10 invites only so that I don't get spammed. I'll remake it if we have to)
 
 We are very new to coding and are using this as a way to further our skills, and hope that through it we can make something to give back to the community.
 Currently, our strengths are in Python, but are open to learning new things to add to this if it gets enough traction.
