@@ -3,6 +3,7 @@ try:
     import configparser
     import sys
     import discord
+    from discord.ext import commands
     import shutil
 except ImportError:
     print('Error importing required libraries, installing them now')
@@ -12,6 +13,7 @@ except ImportError:
         import configparser
         import sys
         import discord
+        from discord.ext import commands
         import shutil
     except:
         print('Error importing required libraries, please install them manually')
@@ -19,6 +21,7 @@ except ImportError:
 
 intents = discord.Intents.all()
 client  = discord.Client(intents=intents)
+bot = commands.Bot(command_prefix='!', intents=intents)
 
 #define a function that prints a message to the debug channel
 
@@ -126,6 +129,10 @@ async def on_ready():
     print('channel ids whitelisted: ' + CHANNEL_IDS)
     await debug_message('Bot is ready')
 
+@bot.command(name='help1')
+async def help(ctx):
+    print('help command')
+    await ctx.send('This is the help command')
 
 @client.event
 async def on_message(message):
@@ -198,8 +205,6 @@ async def on_message(message):
     }
     print(message_details)
     #send the message details to the debug channel
-    await debug_message(message_details)
-    
    
 #start the bot
 client.run(DISCORD_TOKEN)
